@@ -1,0 +1,33 @@
+.menu
+    margin: 0
+    padding: 14px 0
+    list-style: none
+    float: right
+
+.menu-item
+    display: inline-block
+
+.menu-item a
+    display: inline-block
+    color: #fff
+    text-decoration: none
+    padding: 0.5em 1em
+    transition: all 0.4s
+
+.menu-item a:after
+    position: relative
+    top: 0.5em
+    margin: 0 -1em
+    display: block
+    content: ''
+    height: 3px
+    width: 0%
+    opacity: 0
+    left: 0
+    background: #fff
+    margin: 0 auto
+    transition: all 0.4s
+
+.menu-item .v-link-active:after
+    width: 100%
+    opacity: 1
